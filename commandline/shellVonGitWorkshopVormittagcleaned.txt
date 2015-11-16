@@ -1,0 +1,3217 @@
+
+Online
+screen-FIRIEL-4700
+
+± git rev-parse master
+
+5fbc48826190e5ab75c2ee26df5c7998cc237167
+
+ 
+
+1157 agross@FIRIEL /scratch/hello-git-2 @master*
+
+± l
+
+5fbc488 adding config
+
+f855d6a rename refactoring
+
+71f114c adding endpoint
+
+31eeab8 rename
+
+9af5703 modify ignore
+
+ea6a60a adding tools
+
+0d9afc8 adding ignore
+
+c438a7a adding -z switch docs
+
+86442e6 adding zgrep docs
+
+93b023a adding help
+
+c854d1f neues file erzeugt
+
+eae9026 third commit
+
+7cb35ed my seconds commit
+
+ec18616 my first commit
+
+ 
+
+1158 agross@FIRIEL /scratch/hello-git-2 @master*
+
+± git log --oneline --decorate
+
+5fbc488 (HEAD -> master) adding config
+
+f855d6a rename refactoring
+
+71f114c adding endpoint
+
+31eeab8 rename
+
+9af5703 modify ignore
+
+ea6a60a adding tools
+
+0d9afc8 adding ignore
+
+c438a7a adding -z switch docs
+
+86442e6 adding zgrep docs
+
+93b023a adding help
+
+c854d1f neues file erzeugt
+
+eae9026 third commit
+
+7cb35ed my seconds commit
+
+ec18616 my first commit
+
+ 
+
+1159 agross@FIRIEL /scratch/hello-git-2 @master*
+
+± git log --oneline --decorateDl                           git rev-parse HEAD
+
+5fbc48826190e5ab75c2ee26df5c7998cc237167
+
+ 
+
+1160 agross@FIRIEL /scratch/hello-git-2 @master*
+
+± git rev-parse master
+
+5fbc48826190e5ab75c2ee26df5c7998cc237167
+
+ 
+
+1161 agross@FIRIEL /scratch/hello-git-2 @master*
+
+± git rev-parse 5fbc4882
+
+5fbc48826190e5ab75c2ee26df5c7998cc237167
+
+ 
+
+1162 agross@FIRIEL /scratch/hello-git-2 @master*
+
+± ls .git
+
+total 24K
+
+drwxr-xr-x 1 agross None   0 Nov 14 12:11 .
+
+drwxr-xr-x 1 agross None   0 Nov 14 12:01 ..
+
+drwxr-xr-x 1 agross None   0 Nov 14 10:45 hooks
+
+drwxr-xr-x 1 agross None   0 Nov 14 10:45 info
+
+drwxr-xr-x 1 agross None   0 Nov 14 10:53 logs
+
+drwxr-xr-x 1 agross None   0 Nov 14 12:02 objects
+
+drwxr-xr-x 1 agross None   0 Nov 14 10:45 refs
+
+-rw-r--r-- 1 agross None  14 Nov 14 12:02 COMMIT_EDITMSG
+
+-rw-r--r-- 1 agross None 175 Nov 14 11:52 config
+
+-rw-r--r-- 1 agross None  73 Nov 14 10:45 description
+
+-rw-r--r-- 1 agross None  23 Nov 14 10:45 HEAD
+
+-rw-r--r-- 1 agross None 935 Nov 14 12:03 index
+
+ 
+
+1163 agross@FIRIEL /scratch/hello-git-2 @master*
+
+± cat
+
+cat
+
+ 
+
+1163 agross@FIRIEL /scratch/hello-git-2 @master*
+
+↑ cat .git/HEAD 
+
+ref: refs/heads/master
+
+ 
+
+1164 agross@FIRIEL /scratch/hello-git-2 @master*
+
+± cat .git/refs/heads/master 
+
+5fbc48826190e5ab75c2ee26df5c7998cc237167
+
+ 
+
+1165 agross@FIRIEL /scratch/hello-git-2 @master*
+
+± git branch
+
+* master
+
+ 
+
+1166 agross@FIRIEL /scratch/hello-git-2 @master*
+
+± ld
+
+5fbc488 (HEAD -> master) adding config
+
+f855d6a rename refactoring
+
+71f114c adding endpoint
+
+31eeab8 rename
+
+9af5703 modify ignore
+
+ea6a60a adding tools
+
+0d9afc8 adding ignore
+
+c438a7a adding -z switch docs
+
+86442e6 adding zgrep docs
+
+93b023a adding help
+
+c854d1f neues file erzeugt
+
+eae9026 third commit
+
+7cb35ed my seconds commit
+
+ec18616 my first commit
+
+ 
+
+1167 agross@FIRIEL /scratch/hello-git-2 @master*
+
+± git branch name
+
+ 
+
+1168 agross@FIRIEL /scratch/hello-git-2 @master*
+
+± git branch
+
+* master
+
+  name
+
+ 
+
+1169 agross@FIRIEL /scratch/hello-git-2 @master*
+
+± ld
+
+5fbc488 (HEAD -> master, name) adding config
+
+f855d6a rename refactoring
+
+71f114c adding endpoint
+
+31eeab8 rename
+
+9af5703 modify ignore
+
+ea6a60a adding tools
+
+0d9afc8 adding ignore
+
+c438a7a adding -z switch docs
+
+86442e6 adding zgrep docs
+
+93b023a adding help
+
+c854d1f neues file erzeugt
+
+eae9026 third commit
+
+7cb35ed my seconds commit
+
+ec18616 my first commit
+
+ 
+
+1170 agross@FIRIEL /scratch/hello-git-2 @master*
+
+± git branch woanders c438a7a
+
+ 
+
+1171 agross@FIRIEL /scratch/hello-git-2 @master*
+
+± ld
+
+5fbc488 (HEAD -> master, name) adding config
+
+f855d6a rename refactoring
+
+71f114c adding endpoint
+
+31eeab8 rename
+
+9af5703 modify ignore
+
+ea6a60a adding tools
+
+0d9afc8 adding ignore
+
+c438a7a (woanders) adding -z switch docs
+
+86442e6 adding zgrep docs
+
+93b023a adding help
+
+c854d1f neues file erzeugt
+
+eae9026 third commit
+
+7cb35ed my seconds commit
+
+ec18616 my first commit
+
+ 
+
+1172 agross@FIRIEL /scratch/hello-git-2 @master*
+
+± git branch
+
+* master
+
+  name
+
+  woanders
+
+ 
+
+1173 agross@FIRIEL /scratch/hello-git-2 @master*
+
+± ls .git/refs/heads
+
+total 3.0K
+
+drwxr-xr-x 1 agross None  0 Nov 14 13:13 .
+
+drwxr-xr-x 1 agross None  0 Nov 14 10:45 ..
+
+-rw-r--r-- 1 agross None 41 Nov 14 12:02 master
+
+-rw-r--r-- 1 agross None 41 Nov 14 13:12 name
+
+-rw-r--r-- 1 agross None 41 Nov 14 13:13 woanders
+
+ 
+
+1174 agross@FIRIEL /scratch/hello-git-2 @master*
+
+± git config alias.ld 'log --oneline -15 --decorate'
+
+ 
+
+1175 agross@FIRIEL /scratch/hello-git-2 @master*
+
+± git ld
+
+5fbc488 (HEAD -> master, name) adding config
+
+f855d6a rename refactoring
+
+71f114c adding endpoint
+
+31eeab8 rename
+
+9af5703 modify ignore
+
+ea6a60a adding tools
+
+0d9afc8 adding ignore
+
+c438a7a (woanders) adding -z switch docs
+
+86442e6 adding zgrep docs
+
+93b023a adding help
+
+c854d1f neues file erzeugt
+
+eae9026 third commit
+
+7cb35ed my seconds commit
+
+ec18616 my first commit
+
+ 
+
+1176 agross@FIRIEL /scratch/hello-git-2 @master*
+
+± git reflog
+
+5fbc488 HEAD@{0}: commit: adding config
+
+f855d6a HEAD@{1}: commit: rename refactoring
+
+71f114c HEAD@{2}: commit: adding endpoint
+
+31eeab8 HEAD@{3}: commit: rename
+
+9af5703 HEAD@{4}: commit: modify ignore
+
+ea6a60a HEAD@{5}: commit: adding tools
+
+0d9afc8 HEAD@{6}: commit: adding ignore
+
+c438a7a HEAD@{7}: commit: adding -z switch docs
+
+86442e6 HEAD@{8}: commit: adding zgrep docs
+
+93b023a HEAD@{9}: commit: adding help
+
+c854d1f HEAD@{10}: commit: neues file erzeugt
+
+eae9026 HEAD@{11}: commit: third commit
+
+7cb35ed HEAD@{12}: commit: my seconds commit
+
+ec18616 HEAD@{13}: commit (initial): my first commit
+
+ 
+
+1177 agross@FIRIEL /scratch/hello-git-2 @master*
+
+± git reflog name
+
+5fbc488 name@{0}: branch: Created from master
+
+ 
+
+1178 agross@FIRIEL /scratch/hello-git-2 @master*
+
+± git reflog woanders
+
+c438a7a woanders@{0}: branch: Created from c438a7a
+
+ 
+
+1179 agross@FIRIEL /scratch/hello-git-2 @master*
+
+± 
+
+bck-i-search: _Dgit reflogls .git/refDgit fsck --unrCchable --no-reflogsBDc_DCckBCk_DfsckBCBChecking object directories:   0% (1/256)   Checking object directories:   1% (3/256)   Checking object directories:   2% (6/256)   Checking object directories:   3% (8/256)   Checking object directories:   4% (11/256)   Checking object directories:   5% (13/256)   Checking object directories:   6% (16/256)   Checking object directories:   7% (18/256)   Checking object directories:   8% (21/256)   Checking object directories:   9% (24/256)   Checking object directories:  10% (26/256)   Checking object directories:  11% (29/256)   Checking object directories:  12% (31/256)   Checking object directories:  13% (34/256)   Checking object directories:  14% (36/256)   Checking object directories:  15% (39/256)   Checking object directories:  16% (41/256)   Checking object directories:  17% (44/256)   Checking object directories:  18% (47/256)   Checking object directories:  19% (49/256)   Checking object directories:  20% (52/256)   Checking object directories:  21% (54/256)   Checking object directories:  22% (57/256)   Checking object directories:  23% (59/256)   Checking object directories:  24% (62/256)   Checking object directories:  25% (64/256)   Checking object directories:  26% (67/256)   Checking object directories:  27% (70/256)   Checking object directories:  28% (72/256)   Checking object directories:  29% (75/256)   Checking object directories:  30% (77/256)   Checking object directories:  31% (80/256)   Checking object directories:  32% (82/256)   Checking object directories:  33% (85/256)   Checking object directories:  34% (88/256)   Checking object directories:  35% (90/256)   Checking object directories:  36% (93/256)   Checking object directories:  37% (95/256)   Checking object directories:  38% (98/256)   Checking object directories:  39% (100/256)   Checking object directories:  40% (103/256)   Checking object directories:  41% (105/256)   Checking object directories:  42% (108/256)   Checking object directories:  43% (111/256)   Checking object directories:  44% (113/256)   Checking object directories:  45% (116/256)   Checking object directories:  46% (118/256)   Checking object directories:  47% (121/256)   Checking object directories:  48% (123/256)   Checking object directories:  49% (126/256)   Checking object directories:  50% (128/256)   Checking object directories:  51% (131/256)   Checking object directories:  52% (134/256)   Checking object directories:  53% (136/256)   Checking object directories:  54% (139/256)   Checking object directories:  55% (141/256)   Checking object directories:  56% (144/256)   Checking object directories:  57% (146/256)   Checking object directories:  58% (149/256)   Checking object directories:  59% (152/256)   Checking object directories:  60% (154/256)   Checking object directories:  61% (157/256)   Checking object directories:  62% (159/256)   Checking object directories:  63% (162/256)   Checking object directories:  64% (164/256)   Checking object directories:  65% (167/256)   Checking object directories:  66% (169/256)   Checking object directories:  67% (172/256)   Checking object directories:  68% (175/256)   Checking object directories:  69% (177/256)   Checking object directories:  70% (180/256)   Checking object directories:  71% (182/256)   Checking object directories:  72% (185/256)   Checking object directories:  73% (187/256)   Checking object directories:  74% (190/256)   Checking object directories:  75% (192/256)   Checking object directories:  76% (195/256)   Checking object directories:  77% (198/256)   Checking object directories:  78% (200/256)   Checking object directories:  79% (203/256)   Checking object directories:  80% (205/256)   Checking object directories:  81% (208/256)   Checking object directories:  82% (210/256)   Checking object directories:  83% (213/256)   Checking object directories:  84% (216/256)   Checking object directories:  85% (218/256)   Checking object directories:  86% (221/256)   Checking object directories:  87% (223/256)   Checking object directories:  88% (226/256)   Checking object directories:  89% (228/256)   Checking object directories:  90% (231/256)   Checking object directories:  91% (233/256)   Checking object directories:  92% (236/256)   Checking object directories:  93% (239/256)   Checking object directories:  94% (241/256)   Checking object directories:  95% (244/256)   Checking object directories:  96% (246/256)   Checking object directories:  97% (249/256)   Checking object directories:  98% (251/256)   Checking object directories:  99% (254/256)   Checking object directories: 100% (256/256)   Checking object directories: 100% (256/256), done.
+
+ 
+
+1180 agross@FIRIEL /scratch/hello-git-2 @master*
+
+± ld
+
+5fbc488 (HEAD -> master, name) adding config
+
+f855d6a rename refactoring
+
+71f114c adding endpoint
+
+31eeab8 rename
+
+9af5703 modify ignore
+
+ea6a60a adding tools
+
+0d9afc8 adding ignore
+
+c438a7a (woanders) adding -z switch docs
+
+86442e6 adding zgrep docs
+
+93b023a adding help
+
+c854d1f neues file erzeugt
+
+eae9026 third commit
+
+7cb35ed my seconds commit
+
+ec18616 my first commit
+
+ 
+
+1181 agross@FIRIEL /scratch/hello-git-2 @master*
+
+± git checkout woanders
+
+error: Your local changes to the following files would be overwritten by checkout:
+
+	FoobarConfig.cs
+
+	default.yaml
+
+Please, commit your changes or stash them before you can switch branches.
+
+Aborting
+
+ 
+
+1182 agross@FIRIEL /scratch/hello-git-2 @master*
+
+↑ git status
+
+On branch master
+
+Changes not staged for commit:
+
+  (use "git add <file>..." to update what will be committed)
+
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+ 
+
+	modified:   FoobarConfig.cs
+
+ 
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+ 
+
+1183 agross@FIRIEL /scratch/hello-git-2 @master*
+
+± git checkout .
+
+ 
+
+1184 agross@FIRIEL /scratch/hello-git-2 @master
+
+± git checkout woanders
+
+Switched to branch 'woanders'
+
+ 
+
+1185 agross@FIRIEL /scratch/hello-git-2 @woanders
+
+± ld
+
+c438a7a (HEAD -> woanders) adding -z switch docs
+
+86442e6 adding zgrep docs
+
+93b023a adding help
+
+c854d1f neues file erzeugt
+
+eae9026 third commit
+
+7cb35ed my seconds commit
+
+ec18616 my first commit
+
+ 
+
+1186 agross@FIRIEL /scratch/hello-git-2 @woanders
+
+± ld --all
+
+5fbc488 (name, master) adding config
+
+f855d6a rename refactoring
+
+71f114c adding endpoint
+
+31eeab8 rename
+
+9af5703 modify ignore
+
+ea6a60a adding tools
+
+0d9afc8 adding ignore
+
+c438a7a (HEAD -> woanders) adding -z switch docs
+
+86442e6 adding zgrep docs
+
+93b023a adding help
+
+c854d1f neues file erzeugt
+
+eae9026 third commit
+
+7cb35ed my seconds commit
+
+ec18616 my first commit
+
+ 
+
+1187 agross@FIRIEL /scratch/hello-git-2 @woanders
+
+± ls
+
+total 53K
+
+drwxr-xr-x 1 agross None   0 Nov 14 13:32 .
+
+drwxr-xr-x 1 agross None   0 Nov 14 10:45 ..
+
+drwxr-xr-x 1 agross None   0 Nov 14 13:32 .git
+
+-rw-r--r-- 1 agross None 29K Nov 14 13:32 grep-help.txt
+
+-rw-r--r-- 1 agross None  21 Nov 14 11:17 hello.txt
+
+-rw-r--r-- 1 agross None   0 Nov 14 11:06 zweites-file
+
+ 
+
+1188 agross@FIRIEL /scratch/hello-git-2 @woanders
+
+± git checkout master
+
+Switched to branch 'master'
+
+ 
+
+1189 agross@FIRIEL /scratch/hello-git-2 @master
+
+± ld
+
+5fbc488 (HEAD -> master, name) adding config
+
+f855d6a rename refactoring
+
+71f114c adding endpoint
+
+31eeab8 rename
+
+9af5703 modify ignore
+
+ea6a60a adding tools
+
+0d9afc8 adding ignore
+
+c438a7a (woanders) adding -z switch docs
+
+86442e6 adding zgrep docs
+
+93b023a adding help
+
+c854d1f neues file erzeugt
+
+eae9026 third commit
+
+7cb35ed my seconds commit
+
+ec18616 my first commit
+
+ 
+
+1190 agross@FIRIEL /scratch/hello-git-2 @master
+
+± ls
+
+total 27K
+
+drwxr-xr-x 1 agross None    0 Nov 14 13:35 .
+
+drwxr-xr-x 1 agross None    0 Nov 14 10:45 ..
+
+drwxr-xr-x 1 agross None    0 Nov 14 13:35 .git
+
+drwxr-xr-x 1 agross None    0 Nov 14 13:35 src
+
+drwxr-xr-x 1 agross None    0 Nov 14 13:35 tools
+
+-rw-r--r-- 1 agross None   37 Nov 14 13:35 .gitignore
+
+-rw-r--r-- 1 agross None  495 Nov 14 13:35 default.yaml
+
+-rw-r--r-- 1 agross None 1.6K Nov 14 13:35 FoobarConfig.cs
+
+-rw-r--r-- 1 agross None   21 Nov 14 11:17 hello.txt
+
+-rw-r--r-- 1 agross None    0 Nov 14 11:06 zweites-file
+
+ 
+
+1191 agross@FIRIEL /scratch/hello-git-2 @master
+
+± 
+
+bck-i-search: _Dgit checkout a_Dld --all    git config alias.ld 'log --oneline -15 --decoratealiBCB
+
+1192 agross@FIRIEL /scratch/hello-git-2 @master
+
+± ld
+
+5fbc488 (HEAD -> master, name) adding config
+
+f855d6a rename refactoring
+
+71f114c adding endpoint
+
+31eeab8 rename
+
+9af5703 modify ignore
+
+ea6a60a adding tools
+
+0d9afc8 adding ignore
+
+c438a7a (woanders) adding -z switch docs
+
+86442e6 adding zgrep docs
+
+93b023a adding help
+
+c854d1f neues file erzeugt
+
+eae9026 third commit
+
+7cb35ed my seconds commit
+
+ec18616 my first commit
+
+ 
+
+1193 agross@FIRIEL /scratch/hello-git-2 @master
+
+± git log -1 -p
+
+commit 5fbc48826190e5ab75c2ee26df5c7998cc237167
+
+Author: Peter Pan <agross@grossweber.com>
+
+Date:   Sat Nov 14 12:02:15 2015 +0100
+
+ 
+
+    adding config
+
+ 
+
+diff --git a/default.yaml b/default.yaml
+
+new file mode 100644
+
+index 0000000..c373b0c
+
+--- /dev/null
+
++++ b/default.yaml
+
+@@ -0,0 +1,25 @@
+
++project: Angebot
+
++
+
++build:
+
++  configuration: Debug
+
++  metadata:
+
++    pre: alpha<%= ENV['BUILD_NUMBER'].to_s.rjust(3, '0') %>
+
++    build: <%= ENV['BUILD_NUMBER'] %>
+
++    sha: <%= (ENV['BUILD_VCS_NUMBER'] || `git rev-parse --short HEAD`)[0...7] %>
+
++
+
++log:
+
++  level: DEBUG
+
++  appender:
+
++    smtp:
+
++      level: 'OFF'
+
++      recipient:
+
++
+
++smtp:
+
+lines 1-29
+
+1194 agross@FIRIEL /scratch/hello-git-2 @master
+
+± git reset --hard f855d6a
+
+HEAD is now at f855d6a rename refactoring
+
+ 
+
+1195 agross@FIRIEL /scratch/hello-git-2 @master
+
+± ld --all
+
+5fbc488 (name) adding config
+
+f855d6a (HEAD -> master) rename refactoring
+
+71f114c adding endpoint
+
+31eeab8 rename
+
+9af5703 modify ignore
+
+ea6a60a adding tools
+
+0d9afc8 adding ignore
+
+c438a7a (woanders) adding -z switch docs
+
+86442e6 adding zgrep docs
+
+93b023a adding help
+
+c854d1f neues file erzeugt
+
+eae9026 third commit
+
+7cb35ed my seconds commit
+
+ec18616 my first commit
+
+ 
+
+1196 agross@FIRIEL /scratch/hello-git-2 @master
+
+± ls
+
+total 26K
+
+drwxr-xr-x 1 agross None    0 Nov 14 13:46 .
+
+drwxr-xr-x 1 agross None    0 Nov 14 10:45 ..
+
+drwxr-xr-x 1 agross None    0 Nov 14 13:46 .git
+
+drwxr-xr-x 1 agross None    0 Nov 14 13:35 src
+
+drwxr-xr-x 1 agross None    0 Nov 14 13:35 tools
+
+-rw-r--r-- 1 agross None   37 Nov 14 13:35 .gitignore
+
+-rw-r--r-- 1 agross None 1.6K Nov 14 13:35 FoobarConfig.cs
+
+-rw-r--r-- 1 agross None   21 Nov 14 11:17 hello.txt
+
+-rw-r--r-- 1 agross None    0 Nov 14 11:06 zweites-file
+
+ 
+
+1197 agross@FIRIEL /scratch/hello-git-2 @master
+
+± git status
+
+On branch master
+
+nothing to commit, working directory clean
+
+ 
+
+1198 agross@FIRIEL /scratch/hello-git-2 @master
+
+± git reset --hard name
+
+HEAD is now at 5fbc488 adding config
+
+ 
+
+1199 agross@FIRIEL /scratch/hello-git-2 @master
+
+± ld
+
+5fbc488 (HEAD -> master, name) adding config
+
+f855d6a rename refactoring
+
+71f114c adding endpoint
+
+31eeab8 rename
+
+9af5703 modify ignore
+
+ea6a60a adding tools
+
+0d9afc8 adding ignore
+
+c438a7a (woanders) adding -z switch docs
+
+86442e6 adding zgrep docs
+
+93b023a adding help
+
+c854d1f neues file erzeugt
+
+eae9026 third commit
+
+7cb35ed my seconds commit
+
+ec18616 my first commit
+
+ 
+
+1200 agross@FIRIEL /scratch/hello-git-2 @master
+
+± ls
+
+total 27K
+
+drwxr-xr-x 1 agross None    0 Nov 14 13:47 .
+
+drwxr-xr-x 1 agross None    0 Nov 14 10:45 ..
+
+drwxr-xr-x 1 agross None    0 Nov 14 13:47 .git
+
+drwxr-xr-x 1 agross None    0 Nov 14 13:35 src
+
+drwxr-xr-x 1 agross None    0 Nov 14 13:35 tools
+
+-rw-r--r-- 1 agross None   37 Nov 14 13:35 .gitignore
+
+-rw-r--r-- 1 agross None  495 Nov 14 13:47 default.yaml
+
+-rw-r--r-- 1 agross None 1.6K Nov 14 13:35 FoobarConfig.cs
+
+-rw-r--r-- 1 agross None   21 Nov 14 11:17 hello.txt
+
+-rw-r--r-- 1 agross None    0 Nov 14 11:06 zweites-file
+
+ 
+
+1201 agross@FIRIEL /scratch/hello-git-2 @master
+
+± git reset --mixed f855d6a
+
+ 
+
+1202 agross@FIRIEL /scratch/hello-git-2 @master?
+
+± git status
+
+On branch master
+
+Untracked files:
+
+  (use "git add <file>..." to include in what will be committed)
+
+ 
+
+	default.yaml
+
+ 
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+ 
+
+1203 agross@FIRIEL /scratch/hello-git-2 @master?
+
+± ld --all
+
+5fbc488 (name) adding config
+
+f855d6a (HEAD -> master) rename refactoring
+
+71f114c adding endpoint
+
+31eeab8 rename
+
+9af5703 modify ignore
+
+ea6a60a adding tools
+
+0d9afc8 adding ignore
+
+c438a7a (woanders) adding -z switch docs
+
+86442e6 adding zgrep docs
+
+93b023a adding help
+
+c854d1f neues file erzeugt
+
+eae9026 third commit
+
+7cb35ed my seconds commit
+
+ec18616 my first commit
+
+ 
+
+1204 agross@FIRIEL /scratch/hello-git-2 @master?
+
+± git reset --hard name
+
+HEAD is now at 5fbc488 adding config
+
+ 
+
+1205 agross@FIRIEL /scratch/hello-git-2 @master
+
+± git branch -d name
+
+Deleted branch name (was 5fbc488).
+
+ 
+
+1206 agross@FIRIEL /scratch/hello-git-2 @master
+
+± ld
+
+5fbc488 (HEAD -> master) adding config
+
+f855d6a rename refactoring
+
+71f114c adding endpoint
+
+31eeab8 rename
+
+9af5703 modify ignore
+
+ea6a60a adding tools
+
+0d9afc8 adding ignore
+
+c438a7a (woanders) adding -z switch docs
+
+86442e6 adding zgrep docs
+
+93b023a adding help
+
+c854d1f neues file erzeugt
+
+eae9026 third commit
+
+7cb35ed my seconds commit
+
+ec18616 my first commit
+
+ 
+
+1207 agross@FIRIEL /scratch/hello-git-2 @master
+
+± git commit --amend -m "neue message"
+
+[master 6225d07] neue message
+
+ Date: Sat Nov 14 12:02:15 2015 +0100
+
+ 1 file changed, 25 insertions(+)
+
+ create mode 100644 default.yaml
+
+ 
+
+1208 agross@FIRIEL /scratch/hello-git-2 @master
+
+± ld
+
+6225d07 (HEAD -> master) neue message
+
+f855d6a rename refactoring
+
+71f114c adding endpoint
+
+31eeab8 rename
+
+9af5703 modify ignore
+
+ea6a60a adding tools
+
+0d9afc8 adding ignore
+
+c438a7a (woanders) adding -z switch docs
+
+86442e6 adding zgrep docs
+
+93b023a adding help
+
+c854d1f neues file erzeugt
+
+eae9026 third commit
+
+7cb35ed my seconds commit
+
+ec18616 my first commit
+
+ 
+
+1209 agross@FIRIEL /scratch/hello-git-2 @master
+
+± git log -1 --name-only
+
+commit 6225d07a2dc4d1b6e86eb78b5f417d24481eae5f
+
+Author: Peter Pan <agross@grossweber.com>
+
+Date:   Sat Nov 14 12:02:15 2015 +0100
+
+ 
+
+    neue message
+
+ 
+
+default.yaml
+
+ 
+
+1210 agross@FIRIEL /scratch/hello-git-2 @master
+
+± git status
+
+On branch master
+
+Untracked files:
+
+  (use "git add <file>..." to include in what will be committed)
+
+ 
+
+	vergessenes-file
+
+ 
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+ 
+
+1211 agross@FIRIEL /scratch/hello-git-2 @master?
+
+± git add .
+
+ 
+
+1212 agross@FIRIEL /scratch/hello-git-2 @master^
+
+± git commit --amend --no-edit
+
+[master f5ef2af] neue message
+
+ Date: Sat Nov 14 12:02:15 2015 +0100
+
+ 2 files changed, 25 insertions(+)
+
+ create mode 100644 default.yaml
+
+ create mode 100644 vergessenes-file
+
+ 
+
+1213 agross@FIRIEL /scratch/hello-git-2 @master
+
+± git log -1 --name-only
+
+Completing option
+
+--name-only    -- show only names of changed files
+
+--name-status  -- show only names and status of changed files
+
+Completing recent commit object nameACgit log -1 --name-only
+
+commit f5ef2af2dc62e8651753fa7c465fb742d1fa32cf
+
+Author: Peter Pan <agross@grossweber.com>
+
+Date:   Sat Nov 14 12:02:15 2015 +0100
+
+ 
+
+    neue message
+
+ 
+
+default.yaml
+
+vergessenes-file
+
+ 
+
+1214 agross@FIRIEL /scratch/hello-git-2 @master
+
+± git revert HEAD
+
+[master 4a6290c] Revert "neue message"
+
+ 2 files changed, 25 deletions(-)
+
+ delete mode 100644 default.yaml
+
+ delete mode 100644 vergessenes-file
+
+ 
+
+1215 agross@FIRIEL /scratch/hello-git-2 @master
+
+± ld
+
+4a6290c (HEAD -> master) Revert "neue message"
+
+f5ef2af neue message
+
+f855d6a rename refactoring
+
+71f114c adding endpoint
+
+31eeab8 rename
+
+9af5703 modify ignore
+
+ea6a60a adding tools
+
+0d9afc8 adding ignore
+
+c438a7a (woanders) adding -z switch docs
+
+86442e6 adding zgrep docs
+
+93b023a adding help
+
+c854d1f neues file erzeugt
+
+eae9026 third commit
+
+7cb35ed my seconds commit
+
+ec18616 my first commit
+
+ 
+
+1216 agross@FIRIEL /scratch/hello-git-2 @master
+
+± ls
+
+total 26K
+
+drwxr-xr-x 1 agross None    0 Nov 14 13:59 .
+
+drwxr-xr-x 1 agross None    0 Nov 14 10:45 ..
+
+drwxr-xr-x 1 agross None    0 Nov 14 14:00 .git
+
+drwxr-xr-x 1 agross None    0 Nov 14 13:35 src
+
+drwxr-xr-x 1 agross None    0 Nov 14 13:35 tools
+
+-rw-r--r-- 1 agross None   37 Nov 14 13:35 .gitignore
+
+-rw-r--r-- 1 agross None 1.6K Nov 14 13:35 FoobarConfig.cs
+
+-rw-r--r-- 1 agross None   21 Nov 14 11:17 hello.txt
+
+-rw-r--r-- 1 agross None    0 Nov 14 11:06 zweites-file
+
+ 
+
+1217 agross@FIRIEL /scratch/hello-git-2 @master
+
+± git 
+
+commit 4a6290c47958a07ba63e72f92d536e9a04134456
+
+Author: Peter Pan <agross@grossweber.com>
+
+Date:   Sat Nov 14 13:59:50 2015 +0100
+
+ 
+
+    Revert "neue message"
+
+    
+
+    This reverts commit f5ef2af2dc62e8651753fa7c465fb742d1fa32cf.
+
+ 
+
+1218 agross@FIRIEL /scratch/hello-git-2 @master
+
+± git revert ea6a60a
+
+[master 166411d] Revert "adding tools"
+
+ 3 files changed, 137 deletions(-)
+
+ delete mode 100644 tools/.gitignore
+
+ delete mode 100644 tools/Foobar/bin/app.config
+
+ delete mode 100644 tools/Foobar/lib/deploy.ps1
+
+ 
+
+1219 agross@FIRIEL /scratch/hello-git-2 @master
+
+± ls
+
+total 26K
+
+drwxr-xr-x 1 agross None    0 Nov 14 14:01 .
+
+drwxr-xr-x 1 agross None    0 Nov 14 10:45 ..
+
+drwxr-xr-x 1 agross None    0 Nov 14 14:01 .git
+
+drwxr-xr-x 1 agross None    0 Nov 14 13:35 src
+
+-rw-r--r-- 1 agross None   37 Nov 14 13:35 .gitignore
+
+-rw-r--r-- 1 agross None 1.6K Nov 14 13:35 FoobarConfig.cs
+
+-rw-r--r-- 1 agross None   21 Nov 14 11:17 hello.txt
+
+-rw-r--r-- 1 agross None    0 Nov 14 11:06 zweites-file
+
+ 
+
+1220 agross@FIRIEL /scratch/hello-git-2 @master
+
+± ld
+
+166411d (HEAD -> master) Revert "adding tools"
+
+4a6290c Revert "neue message"
+
+f5ef2af neue message
+
+f855d6a rename refactoring
+
+71f114c adding endpoint
+
+31eeab8 rename
+
+9af5703 modify ignore
+
+ea6a60a adding tools
+
+0d9afc8 adding ignore
+
+c438a7a (woanders) adding -z switch docs
+
+86442e6 adding zgrep docs
+
+93b023a adding help
+
+c854d1f neues file erzeugt
+
+eae9026 third commit
+
+7cb35ed my seconds commit
+
+ 
+
+1221 agross@FIRIEL /scratch/hello-git-2 @master
+
+± git some 
+
+[master a00ecf2] commit message for file-45.txt
+
+ 1 file changed, 1 insertion(+)
+
+ create mode 100644 file-45.txt
+
+ 
+
+ 
+
+1222 agross@FIRIEL /scratch/hello-git-2 @master
+
+± cat file-45.txt
+
+file-45.txt
+
+ 
+
+1223 agross@FIRIEL /scratch/hello-git-2 @master
+
+± git some
+
+[master d12ccc9] commit message for file-86.txt
+
+ 1 file changed, 1 insertion(+)
+
+ create mode 100644 file-86.txt
+
+ 
+
+ 
+
+1224 agross@FIRIEL /scratch/hello-git-2 @master
+
+± git some 2
+
+[master 445aaf3] commit message for file-35.txt
+
+ 1 file changed, 1 insertion(+)
+
+ create mode 100644 file-35.txt
+
+ 
+
+[master 9b9fdbd] commit message for file-34.txt
+
+ 1 file changed, 1 insertion(+)
+
+ create mode 100644 file-34.txt
+
+ 
+
+ 
+
+1225 agross@FIRIEL /scratch/hello-git-2 @master
+
+± ld
+
+9b9fdbd (HEAD -> master) commit message for file-34.txt
+
+445aaf3 commit message for file-35.txt
+
+d12ccc9 commit message for file-86.txt
+
+a00ecf2 commit message for file-45.txt
+
+166411d Revert "adding tools"
+
+4a6290c Revert "neue message"
+
+f5ef2af neue message
+
+f855d6a rename refactoring
+
+71f114c adding endpoint
+
+31eeab8 rename
+
+9af5703 modify ignore
+
+ea6a60a adding tools
+
+0d9afc8 adding ignore
+
+c438a7a (woanders) adding -z switch docs
+
+86442e6 adding zgrep docs
+
+ 
+
+1226 agross@FIRIEL /scratch/hello-git-2 @master
+
+± cd ..
+
+ 
+
+1227 agross@FIRIEL /scratch
+
+$ mkcd fragen
+
+ 
+
+1228 agross@FIRIEL /scratch/fragen
+
+$ git init
+
+Initialized empty Git repository in /scratch/fragen/.git/
+
+ 
+
+1229 agross@FIRIEL /scratch/fragen @master
+
+± git some 3
+
+[master (root-commit) 2145e24] commit message for file-91.txt
+
+ 1 file changed, 1 insertion(+)
+
+ create mode 100644 file-91.txt
+
+ 
+
+[master e0ebcd2] commit message for file-45.txt
+
+ 1 file changed, 1 insertion(+)
+
+ create mode 100644 file-45.txt
+
+ 
+
+[master fc5b452] commit message for file-32.txt
+
+ 1 file changed, 1 insertion(+)
+
+ create mode 100644 file-32.txt
+
+ 
+
+ 
+
+1230 agross@FIRIEL /scratch/fragen @master
+
+± ld
+
+fc5b452 (HEAD -> master) commit message for file-32.txt
+
+e0ebcd2 commit message for file-45.txt
+
+2145e24 commit message for file-91.txt
+
+ 
+
+1231 agross@FIRIEL /scratch/fragen @master
+
+± git checkout -b topic e0ebcd2
+
+Switched to a new branch 'topic'
+
+ 
+
+1232 agross@FIRIEL /scratch/fragen @topic
+
+± ld
+
+e0ebcd2 (HEAD -> topic) commit message for file-45.txt
+
+2145e24 commit message for file-91.txt
+
+ 
+
+1233 agross@FIRIEL /scratch/fragen @topic
+
+± ld --all
+
+fc5b452 (master) commit message for file-32.txt
+
+e0ebcd2 (HEAD -> topic) commit message for file-45.txt
+
+2145e24 commit message for file-91.txt
+
+ 
+
+1234 agross@FIRIEL /scratch/fragen @topic
+
+± git some 2
+
+[topic d97cd29] commit message for file-69.txt
+
+ 1 file changed, 1 insertion(+)
+
+ create mode 100644 file-69.txt
+
+ 
+
+[topic 9a6fa03] commit message for file-33.txt
+
+ 1 file changed, 1 insertion(+)
+
+ create mode 100644 file-33.txt
+
+ 
+
+ 
+
+1235 agross@FIRIEL /scratch/fragen @topic
+
+± ui
+
+ 
+
+1236 agross@FIRIEL /scratch/fragen @topic
+
+± Qt: Untested Windows version 6.2 detected!
+
+
+
+ 
+
+1236 agross@FIRIEL /scratch/fragen @topic
+
+↑ glog
+
+* 9a6fa03 (HEAD -> topic) commit message for file-33.txt
+
+* d97cd29 commit message for file-69.txt
+
+| * fc5b452 (master) commit message for file-32.txt
+
+|/  
+
+* e0ebcd2 commit message for file-45.txt
+
+* 2145e24 commit message for file-91.txt
+
+ 
+
+1237 agross@FIRIEL /scratch/fragen @topic
+
+± type glog
+
+glog is an alias for git log --graph --oneline --decorate --branches --all
+
+ 
+
+1238 agross@FIRIEL /scratch/fragen @topic
+
+± cd ~
+
+ 
+
+1239 agross@FIRIEL ~
+
+$ git clone git@github.com:GROSSWEBER/git-some.git
+
+Cloning into 'git-some'...
+
+remote: Counting objects: 21, done.
+
+remote: Total 21 (delta 0), reused 0 (delta 0), pack-reused 21
+
+Receiving objects:   4% (1/21)   Receiving objects:   9% (2/21)   Receiving objects:  14% (3/21)   Receiving objects:  19% (4/21)   Receiving objects:  23% (5/21)   Receiving objects:  28% (6/21)   Receiving objects:  33% (7/21)   Receiving objects:  38% (8/21)   Receiving objects:  42% (9/21)   Receiving objects:  47% (10/21)   Receiving objects:  52% (11/21)   Receiving objects:  57% (12/21)   Receiving objects:  61% (13/21)   Receiving objects:  66% (14/21)   Receiving objects:  71% (15/21)   Receiving objects:  76% (16/21)   Receiving objects:  80% (17/21)   Receiving objects:  85% (18/21)   Receiving objects:  90% (19/21)   Receiving objects:  95% (20/21)   Receiving objects: 100% (21/21)   Receiving objects: 100% (21/21), done.
+
+Resolving deltas:   0% (0/7)   Resolving deltas:  28% (2/7)   Resolving deltas:  85% (6/7)   Resolving deltas: 100% (7/7)   Resolving deltas: 100% (7/7), done.
+
+Checking connectivity... done.
+
+ 
+
+1240 agross@FIRIEL ~
+
+$ cd git-some
+
+ 
+
+1241 agross@FIRIEL ~/git-some @master
+
+± ls
+
+total 25K
+
+drwxr-xr-x 1 agross None   0 Nov 14 14:36 .
+
+drwxr-xr-x 1 agross None   0 Nov 14 14:36 ..
+
+drwxr-xr-x 1 agross None   0 Nov 14 14:36 .git
+
+-rwxr-xr-x 1 agross None 991 Nov 14 14:36 git-some.sh
+
+-rwxr-xr-x 1 agross None 277 Nov 14 14:36 install.sh
+
+-rw-r--r-- 1 agross None 739 Nov 14 14:36 README.md
+
+ 
+
+1242 agross@FIRIEL ~/git-some @master
+
+± ./install.sh 
+
+git-some successfully installed.
+
+You can now use "git some".
+
+ 
+
+1243 agross@FIRIEL ~/git-some @master
+
+± cd -
+
+~
+
+ 
+
+1244 agross@FIRIEL ~
+
+$ cd /scratch
+
+ 
+
+1245 agross@FIRIEL /scratch
+
+$ mkdir fragen2 && cd fragen2
+
+ 
+
+1246 agross@FIRIEL /scratch/fragen2
+
+$ git init
+
+Initialized empty Git repository in /scratch/fragen2/.git/
+
+ 
+
+1247 agross@FIRIEL /scratch/fragen2 @master
+
+± git some 3
+
+[master (root-commit) 3b37305] commit message for file-18.txt
+
+ 1 file changed, 1 insertion(+)
+
+ create mode 100644 file-18.txt
+
+ 
+
+[master 873d6c4] commit message for file-22.txt
+
+ 1 file changed, 1 insertion(+)
+
+ create mode 100644 file-22.txt
+
+ 
+
+[master 4f7bc6c] commit message for file-83.txt
+
+ 1 file changed, 1 insertion(+)
+
+ create mode 100644 file-83.txt
+
+ 
+
+ 
+
+1248 agross@FIRIEL /scratch/fragen2 @master
+
+± type glog
+
+glog is an alias for git log --graph --oneline --decorate --branches --all
+
+ 
+
+1249 agross@FIRIEL /scratch/fragen2 @master
+
+± glog
+
+* 4f7bc6c (HEAD -> master) commit message for file-83.txt
+
+* 873d6c4 commit message for file-22.txt
+
+* 3b37305 commit message for file-18.txt
+
+ 
+
+1250 agross@FIRIEL /scratch/fragen2 @master
+
+± git checkout -b topic 873d6c4
+
+Switched to a new branch 'topic'
+
+ 
+
+1251 agross@FIRIEL /scratch/fragen2 @topic
+
+± git some 2
+
+[topic 58c5640] commit message for file-27.txt
+
+ 1 file changed, 1 insertion(+)
+
+ create mode 100644 file-27.txt
+
+ 
+
+[topic 4f49cd2] commit message for file-95.txt
+
+ 1 file changed, 1 insertion(+)
+
+ create mode 100644 file-95.txt
+
+ 
+
+ 
+
+1252 agross@FIRIEL /scratch/fragen2 @topic
+
+± glog
+
+* 4f49cd2 (HEAD -> topic) commit message for file-95.txt
+
+* 58c5640 commit message for file-27.txt
+
+| * 4f7bc6c (master) commit message for file-83.txt
+
+|/  
+
+* 873d6c4 commit message for file-22.txt
+
+* 3b37305 commit message for file-18.txt
+
+ 
+
+1253 agross@FIRIEL /scratch/fragen2 @topic
+
+± gitk --all &
+
+zsh: correct gitk to git? yes/no/edit/abort n
+
+[1] 4664
+
+zsh: command not found: gitk
+
+ 
+
+1254 agross@FIRIEL /scratch/fragen2 @topic
+
+± cd ..
+
+[1]  + 4664 exit 127   gitk --all
+
+ 
+
+1255 agross@FIRIEL /scratch
+
+$ mkdir frage3 && cd frage
+
+ 
+
+1256 agross@FIRIEL /scratch/frage3
+
+$ git init
+
+Initialized empty Git repository in /scratch/frage3/.git/
+
+ 
+
+1257 agross@FIRIEL /scratch/frage3 @master
+
+± git some 3
+
+[master (root-commit) 73e601d] commit message for file-17.txt
+
+ 1 file changed, 1 insertion(+)
+
+ create mode 100644 file-17.txt
+
+ 
+
+[master 44baa73] commit message for file-47.txt
+
+ 1 file changed, 1 insertion(+)
+
+ create mode 100644 file-47.txt
+
+ 
+
+[master bd88fe8] commit message for file-56.txt
+
+ 1 file changed, 1 insertion(+)
+
+ create mode 100644 file-56.txt
+
+ 
+
+ 
+
+1258 agross@FIRIEL /scratch/frage3 @master
+
+± glog
+
+* bd88fe8 (HEAD -> master) commit message for file-56.txt
+
+* 44baa73 commit message for file-47.txt
+
+* 73e601d commit message for file-17.txt
+
+ 
+
+1259 agross@FIRIEL /scratch/frage3 @master
+
+± type glog
+
+glog is an alias for git log --graph --oneline --decorate --branches --all
+
+ 
+
+1260 agross@FIRIEL /scratch/frage3 @master
+
+± git branch topic HEAD^
+
+ 
+
+1261 agross@FIRIEL /scratch/frage3 @master
+
+± glog
+
+* bd88fe8 (HEAD -> master) commit message for file-56.txt
+
+* 44baa73 (topic) commit message for file-47.txt
+
+* 73e601d commit message for file-17.txt
+
+ 
+
+1262 agross@FIRIEL /scratch/frage3 @master
+
+± git checkout topic
+
+Switched to branch 'topic'
+
+ 
+
+1263 agross@FIRIEL /scratch/frage3 @topic
+
+± glog
+
+* bd88fe8 (master) commit message for file-56.txt
+
+* 44baa73 (HEAD -> topic) commit message for file-47.txt
+
+* 73e601d commit message for file-17.txt
+
+ 
+
+1264 agross@FIRIEL /scratch/frage3 @topic
+
+± git some 2
+
+[topic b054f69] commit message for file-14.txt
+
+ 1 file changed, 1 insertion(+)
+
+ create mode 100644 file-14.txt
+
+ 
+
+[topic 957f3af] commit message for file-77.txt
+
+ 1 file changed, 1 insertion(+)
+
+ create mode 100644 file-77.txt
+
+ 
+
+ 
+
+1265 agross@FIRIEL /scratch/frage3 @topic
+
+± git some 2Dglog
+
+* 957f3af (HEAD -> topic) commit message for file-77.txt
+
+* b054f69 commit message for file-14.txt
+
+| * bd88fe8 (master) commit message for file-56.txt
+
+|/  
+
+* 44baa73 commit message for file-47.txt
+
+* 73e601d commit message for file-17.txt
+
+ 
+
+1266 agross@FIRIEL /scratch/frage3 @topic
+
+± git log --oneline --decorate --all
+
+957f3af (HEAD -> topic) commit message for file-77.txt
+
+b054f69 commit message for file-14.txt
+
+bd88fe8 (master) commit message for file-56.txt
+
+44baa73 commit message for file-47.txt
+
+73e601d commit message for file-17.txt
+
+ 
+
+1267 agross@FIRIEL /scratch/frage3 @topic
+
+± git log --oneline --decorate --all --graph
+
+* 957f3af (HEAD -> topic) commit message for file-77.txt
+
+* b054f69 commit message for file-14.txt
+
+| * bd88fe8 (master) commit message for file-56.txt
+
+|/  
+
+* 44baa73 commit message for file-47.txt
+
+* 73e601d commit message for file-17.txt
+
+ 
+
+1268 agross@FIRIEL /scratch/frage3 @topic
+
+± git branch --contains topic
+
+* topic
+
+ 
+
+1269 agross@FIRIEL /scratch/frage3 @topic
+
+± git branch --contains 44baa73
+
+  master
+
+* topic
+
+ 
+
+1270 agross@FIRIEL /scratch/frage3 @topic
+
+± git log --oneline --decorate
+
+957f3af (HEAD -> topic) commit message for file-77.txt
+
+b054f69 commit message for file-14.txt
+
+44baa73 commit message for file-47.txt
+
+73e601d commit message for file-17.txt
+
+ 
+
+1271 agross@FIRIEL /scratch/frage3 @topic
+
+± git log --oneline --decorate masCer..
+
+957f3af (HEAD -> topic) commit message for file-77.txt
+
+b054f69 commit message for file-14.txt
+
+ 
+
+1272 agross@FIRIEL /scratch/frage3 @topic
+
+± git diff master..topic
+
+diff --git a/file-14.txt b/file-14.txt
+
+new file mode 100644
+
+index 0000000..50129d9
+
+--- /dev/null
+
++++ b/file-14.txt
+
+@@ -0,0 +1 @@
+
++file-14.txt
+
+diff --git a/file-56.txt b/file-56.txt
+
+deleted file mode 100644
+
+index a2cdc83..0000000
+
+--- a/file-56.txt
+
++++ /dev/null
+
+@@ -1 +0,0 @@
+
+-file-56.txt
+
+diff --git a/file-77.txt b/file-77.txt
+
+new file mode 100644
+
+index 0000000..16e4e14
+
+--- /dev/null
+
++++ b/file-77.txt
+
+@@ -0,0 +1 @@
+
++file-77.txt
+
+ 
+
+1273 agross@FIRIEL /scratch/frage3 @topic
+
+± glog
+
+* 957f3af (HEAD -> topic) commit message for file-77.txt
+
+* b054f69 commit message for file-14.txt
+
+| * bd88fe8 (master) commit message for file-56.txt
+
+|/  
+
+* 44baa73 commit message for file-47.txt
+
+* 73e601d commit message for file-17.txt
+
+ 
+
+1274 agross@FIRIEL /scratch/frage3 @topic
+
+± git diff master.C
+
+diff --git a/file-14.txt b/file-14.txt
+
+new file mode 100644
+
+index 0000000..50129d9
+
+--- /dev/null
+
++++ b/file-14.txt
+
+@@ -0,0 +1 @@
+
++file-14.txt
+
+diff --git a/file-77.txt b/file-77.txt
+
+new file mode 100644
+
+index 0000000..16e4e14
+
+--- /dev/null
+
++++ b/file-77.txt
+
+@@ -0,0 +1 @@
+
++file-77.txt
+
+ 
+
+1275 agross@FIRIEL /scratch/frage3 @topic
+
+± git difftoolD     ls
+
+total 20K
+
+drwxr-xr-x 1 agross None  0 Nov 14 14:48 .
+
+drwxr-xr-x 1 agross None  0 Nov 14 14:46 ..
+
+drwxr-xr-x 1 agross None  0 Nov 14 14:48 .git
+
+-rw-r--r-- 1 agross None 12 Nov 14 14:48 file-14.txt
+
+-rw-r--r-- 1 agross None 12 Nov 14 14:46 file-17.txt
+
+-rw-r--r-- 1 agross None 12 Nov 14 14:46 file-47.txt
+
+-rw-r--r-- 1 agross None 12 Nov 14 14:48 file-77.txt
+
+ 
+
+1276 agross@FIRIEL /scratch/frage3 @topic
+
+± echo 123 > file-77.txt
+
+ 
+
+1277 agross@FIRIEL /scratch/frage3 @topic*
+
+± git diff
+
+diff --git a/file-77.txt b/file-77.txt
+
+index 16e4e14..190a180 100644
+
+--- a/file-77.txt
+
++++ b/file-77.txt
+
+@@ -1 +1 @@
+
+-file-77.txt
+
++123
+
+ 
+
+1278 agross@FIRIEL /scratch/frage3 @topic*
+
+± git difftool
+
+ 
+
+1279 agross@FIRIEL /scratch/frage3 @topic*
+
+± git difftool --tool=meld
+
+ 
+
+1280 agross@FIRIEL /scratch/frage3 @topic*
+
+± git difftool --tool=p4
+
+Qt: Untested Windows version 6.2 detected!
+
+ 
+
+1281 agross@FIRIEL /scratch/frage3 @topic*
+
+± git checkout .
+
+ 
+
+1282 agross@FIRIEL /scratch/frage3 @topic
+
+± git difftool --dir-diff --tool=meld master..topic
+
+ 
+
+1283 agross@FIRIEL /scratch/frage3 @topic
+
+± git checkout master
+
+Switched to branch 'master'
+
+ 
+
+1284 agross@FIRIEL /scratch/frage3 @master
+
+± git merge topic
+
+Merge made by the 'recursive' strategy.
+
+ file-14.txt | 1 +
+
+ file-77.txt | 1 +
+
+ 2 files changed, 2 insertions(+)
+
+ create mode 100644 file-14.txt
+
+ create mode 100644 file-77.txt
+
+ 
+
+1285 agross@FIRIEL /scratch/frage3 @master
+
+± glog
+
+*   8a3db15 (HEAD -> master) Merge branch 'topic'
+
+|\  
+
+| * 957f3af (topic) commit message for file-77.txt
+
+| * b054f69 commit message for file-14.txt
+
+* | bd88fe8 commit message for file-56.txt
+
+|/  
+
+* 44baa73 commit message for file-47.txt
+
+* 73e601d commit message for file-17.txt
+
+ 
+
+1286 agross@FIRIEL /scratch/frage3 @master
+
+± ls
+
+total 25K
+
+drwxr-xr-x 1 agross None  0 Nov 14 15:01 .
+
+drwxr-xr-x 1 agross None  0 Nov 14 14:46 ..
+
+drwxr-xr-x 1 agross None  0 Nov 14 15:01 .git
+
+-rw-r--r-- 1 agross None 12 Nov 14 15:01 file-14.txt
+
+-rw-r--r-- 1 agross None 12 Nov 14 14:46 file-17.txt
+
+-rw-r--r-- 1 agross None 12 Nov 14 14:46 file-47.txt
+
+-rw-r--r-- 1 agross None 12 Nov 14 15:00 file-56.txt
+
+-rw-r--r-- 1 agross None 12 Nov 14 15:01 file-77.txt
+
+ 
+
+1287 agross@FIRIEL /scratch/frage3 @master
+
+± git branch -d topic
+
+Deleted branch topic (was 957f3af).
+
+ 
+
+1288 agross@FIRIEL /scratch/frage3 @master
+
+± glog
+
+*   8a3db15 (HEAD -> master) Merge branch 'topic'
+
+|\  
+
+| * 957f3af commit message for file-77.txt
+
+| * b054f69 commit message for file-14.txt
+
+* | bd88fe8 commit message for file-56.txt
+
+|/  
+
+* 44baa73 commit message for file-47.txt
+
+* 73e601d commit message for file-17.txt
+
+ 
+
+1289 agross@FIRIEL /scratch/frage3 @master
+
+± git branch topic 957f3af
+
+ 
+
+1290 agross@FIRIEL /scratch/frage3 @master
+
+± glog
+
+*   8a3db15 (HEAD -> master) Merge branch 'topic'
+
+|\  
+
+| * 957f3af (topic) commit message for file-77.txt
+
+| * b054f69 commit message for file-14.txt
+
+* | bd88fe8 commit message for file-56.txt
+
+|/  
+
+* 44baa73 commit message for file-47.txt
+
+* 73e601d commit message for file-17.txt
+
+ 
+
+1291 agross@FIRIEL /scratch/frage3 @master
+
+± git checkout topic
+
+Switched to branch 'topic'
+
+ 
+
+1292 agross@FIRIEL /scratch/frage3 @topic
+
+± ls
+
+total 24K
+
+drwxr-xr-x 1 agross None  0 Nov 14 15:04 .
+
+drwxr-xr-x 1 agross None  0 Nov 14 14:46 ..
+
+drwxr-xr-x 1 agross None  0 Nov 14 15:04 .git
+
+-rw-r--r-- 1 agross None 12 Nov 14 15:01 file-14.txt
+
+-rw-r--r-- 1 agross None 12 Nov 14 14:46 file-17.txt
+
+-rw-r--r-- 1 agross None 12 Nov 14 14:46 file-47.txt
+
+-rw-r--r-- 1 agross None 12 Nov 14 15:01 file-77.txt
+
+ 
+
+1293 agross@FIRIEL /scratch/frage3 @topic
+
+± git some 3
+
+[topic c88ab5b] commit message for file-27.txt
+
+ 1 file changed, 1 insertion(+)
+
+ create mode 100644 file-27.txt
+
+ 
+
+[topic 010d59c] commit message for file-37.txt
+
+ 1 file changed, 1 insertion(+)
+
+ create mode 100644 file-37.txt
+
+ 
+
+[topic 2108603] commit message for file-12.txt
+
+ 1 file changed, 1 insertion(+)
+
+ create mode 100644 file-12.txt
+
+ 
+
+ 
+
+1294 agross@FIRIEL /scratch/frage3 @topic
+
+± glog
+
+* 2108603 (HEAD -> topic) commit message for file-12.txt
+
+* 010d59c commit message for file-37.txt
+
+* c88ab5b commit message for file-27.txt
+
+| *   8a3db15 (master) Merge branch 'topic'
+
+| |\  
+
+| |/  
+
+|/|   
+
+* | 957f3af commit message for file-77.txt
+
+* | b054f69 commit message for file-14.txt
+
+| * bd88fe8 commit message for file-56.txt
+
+|/  
+
+* 44baa73 commit message for file-47.txt
+
+* 73e601d commit message for file-17.txt
+
+ 
+
+1295 agross@FIRIEL /scratch/frage3 @topic
+
+± git branch --contains=topic
+
+* topic
+
+ 
+
+1296 agross@FIRIEL /scratch/frage3 @topic
+
+± git log --oneline master..topic
+
+2108603 commit message for file-12.txt
+
+010d59c commit message for file-37.txt
+
+c88ab5b commit message for file-27.txt
+
+ 
+
+1297 agross@FIRIEL /scratch/frage3 @topic
+
+± git reset --hard 957f3af
+
+HEAD is now at 957f3af commit message for file-77.txt
+
+ 
+
+1298 agross@FIRIEL /scratch/frage3 @topic
+
+± glog
+
+*   8a3db15 (master) Merge branch 'topic'
+
+|\  
+
+| * 957f3af (HEAD -> topic) commit message for file-77.txt
+
+| * b054f69 commit message for file-14.txt
+
+* | bd88fe8 commit message for file-56.txt
+
+|/  
+
+* 44baa73 commit message for file-47.txt
+
+* 73e601d commit message for file-17.txt
+
+ 
+
+1299 agross@FIRIEL /scratch/frage3 @topic
+
+± git branch -d topic
+
+error: Cannot delete the branch 'topic' which you are currently on.
+
+ 
+
+1300 agross@FIRIEL /scratch/frage3 @topic
+
+↑ git checkout master
+
+Switched to branch 'master'
+
+ 
+
+1301 agross@FIRIEL /scratch/frage3 @master
+
+± git checkout masterDbranch -d topic
+
+Deleted branch topic (was 957f3af).
+
+ 
+
+1302 agross@FIRIEL /scratch/frage3 @master
+
+± glog
+
+*   8a3db15 (HEAD -> master) Merge branch 'topic'
+
+|\  
+
+| * 957f3af commit message for file-77.txt
+
+| * b054f69 commit message for file-14.txt
+
+* | bd88fe8 commit message for file-56.txt
+
+|/  
+
+* 44baa73 commit message for file-47.txt
+
+* 73e601d commit message for file-17.txt
+
+ 
+
+1303 agross@FIRIEL /scratch/frage3 @master
+
+± cd ..
+
+ 
+
+1304 agross@FIRIEL /scratch
+
+$ mkcd merge-ff
+
+ 
+
+1305 agross@FIRIEL /scratch/merge-ff
+
+$ git init
+
+Initialized empty Git repository in /scratch/merge-ff/.git/
+
+ 
+
+1306 agross@FIRIEL /scratch/merge-ff @master
+
+± git some 3
+
+[master (root-commit) 9403749] commit message for file-45.txt
+
+ 1 file changed, 1 insertion(+)
+
+ create mode 100644 file-45.txt
+
+ 
+
+[master 8be519b] commit message for file-50.txt
+
+ 1 file changed, 1 insertion(+)
+
+ create mode 100644 file-50.txt
+
+ 
+
+[master 1edd122] commit message for file-12.txt
+
+ 1 file changed, 1 insertion(+)
+
+ create mode 100644 file-12.txt
+
+ 
+
+ 
+
+1307 agross@FIRIEL /scratch/merge-ff @master
+
+± git checkout -b topic 
+
+Switched to a new branch 'topic'
+
+ 
+
+1308 agross@FIRIEL /scratch/merge-ff @topic
+
+± git some 2
+
+[topic 7eca3c2] commit message for file-57.txt
+
+ 1 file changed, 1 insertion(+)
+
+ create mode 100644 file-57.txt
+
+ 
+
+[topic a835773] commit message for file-36.txt
+
+ 1 file changed, 1 insertion(+)
+
+ create mode 100644 file-36.txt
+
+ 
+
+ 
+
+1309 agross@FIRIEL /scratch/merge-ff @topic
+
+± glog
+
+* a835773 (HEAD -> topic) commit message for file-36.txt
+
+* 7eca3c2 commit message for file-57.txt
+
+* 1edd122 (master) commit message for file-12.txt
+
+* 8be519b commit message for file-50.txt
+
+* 9403749 commit message for file-45.txt
+
+ 
+
+1310 agross@FIRIEL /scratch/merge-ff @topic
+
+± git checkout master
+
+Switched to branch 'master'
+
+ 
+
+1311 agross@FIRIEL /scratch/merge-ff @master
+
+± git merge topic
+
+Updating 1edd122..a835773
+
+Fast-forward
+
+ file-36.txt | 1 +
+
+ file-57.txt | 1 +
+
+ 2 files changed, 2 insertions(+)
+
+ create mode 100644 file-36.txt
+
+ create mode 100644 file-57.txt
+
+ 
+
+1312 agross@FIRIEL /scratch/merge-ff @master
+
+± glog
+
+* a835773 (HEAD -> master, topic) commit message for file-36.txt
+
+* 7eca3c2 commit message for file-57.txt
+
+* 1edd122 commit message for file-12.txt
+
+* 8be519b commit message for file-50.txt
+
+* 9403749 commit message for file-45.txt
+
+ 
+
+1313 agross@FIRIEL /scratch/merge-ff @master
+
+± git branch -d topic
+
+Deleted branch topic (was a835773).
+
+ 
+
+1314 agross@FIRIEL /scratch/merge-ff @master
+
+± glog
+
+* a835773 (HEAD -> master) commit message for file-36.txt
+
+* 7eca3c2 commit message for file-57.txt
+
+* 1edd122 commit message for file-12.txt
+
+* 8be519b commit message for file-50.txt
+
+* 9403749 commit message for file-45.txt
+
+ 
+
+1315 agross@FIRIEL /scratch/merge-ff @master
+
+± cd ..
+
+ 
+
+1316 agross@FIRIEL /scratch
+
+$ mkcd conflict
+
+ 
+
+1317 agross@FIRIEL /scratch/conflict
+
+$ git innit
+
+git: 'innit' is not a git command. See 'git --help'.
+
+ 
+
+Did you mean this?
+
+	init
+
+ 
+
+1318 agross@FIRIEL /scratch/conflict
+
+↑ git init
+
+Initialized empty Git repository in /scratch/conflict/.git/
+
+ 
+
+1319 agross@FIRIEL /scratch/conflict @master
+
+± echo hallo welt > greeting
+
+g
+
+1320 agross@FIRIEL /scratch/conflict @master?
+
+± git add .
+
+gi
+
+1321 agross@FIRIEL /scratch/conflict @master^
+
+± git commit -m deutsch
+
+[master (root-commit) 546e7d2] deutsch
+
+ 1 file changed, 1 insertion(+)
+
+ create mode 100644 greeting
+
+ 
+
+1322 agross@FIRIEL /scratch/conflict @master
+
+± git checkout -b topic
+
+Switched to a new branch 'topic'
+
+ 
+
+1323 agross@FIRIEL /scratch/conflict @topic
+
+± cat greeting 
+
+hallo welt
+
+ 
+
+1324 agross@FIRIEL /scratch/conflict @topic
+
+± echo hello world > greeting 
+
+ 
+
+1325 agross@FIRIEL /scratch/conflict @topic*
+
+± git commit -am "english
+
+[topic 3982333] english
+
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+ 
+
+1326 agross@FIRIEL /scratch/conflict @topic
+
+± git checkout master
+
+Switched to branch 'master'
+
+ 
+
+1327 agross@FIRIEL /scratch/conflict @master
+
+± cat he
+
+No matches for: `files'Ccat greeting 
+
+hallo welt
+
+ 
+
+1328 agross@FIRIEL /scratch/conflict @master
+
+± glog
+
+* 3982333 (topic) english
+
+* 546e7d2 (HEAD -> master) deutsch
+
+ 
+
+1329 agross@FIRIEL /scratch/conflict @master
+
+± echo hola mundo > greeting 
+
+ 
+
+1330 agross@FIRIEL /scratch/conflict @master*
+
+± git commit -am spanish
+
+[master 1a8f916] spanish
+
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+ 
+
+1331 agross@FIRIEL /scratch/conflict @master
+
+± glog
+
+* 1a8f916 (HEAD -> master) spanish
+
+| * 3982333 (topic) english
+
+|/  
+
+* 546e7d2 deutsch
+
+ 
+
+1332 agross@FIRIEL /scratch/conflict @master
+
+± git merge topic
+
+Auto-merging greeting
+
+CONFLICT (content): Merge conflict in greeting
+
+Automatic merge failed; fix conflicts and then commit the result.
+
+ 
+
+1333 agross@FIRIEL /scratch/conflict @master|MERGING*Y
+
+↑ git status
+
+On branch master
+
+You have unmerged paths.
+
+  (fix conflicts and run "git commit")
+
+ 
+
+Unmerged paths:
+
+  (use "git add <file>..." to mark resolution)
+
+ 
+
+	both modified:   greeting
+
+ 
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+ 
+
+1334 agross@FIRIEL /scratch/conflict @master|MERGING*Y
+
+± git merge --abort
+
+ 
+
+1335 agross@FIRIEL /scratch/conflict @master
+
+± glog
+
+* 1a8f916 (HEAD -> master) spanish
+
+| * 3982333 (topic) english
+
+|/  
+
+* 546e7d2 deutsch
+
+ 
+
+1336 agross@FIRIEL /scratch/conflict @master
+
+± git merge --abortDmerge topic
+
+Auto-merging greeting
+
+CONFLICT (content): Merge conflict in greeting
+
+Automatic merge failed; fix conflicts and then commit the result.
+
+ 
+
+1337 agross@FIRIEL /scratch/conflict @master|MERGING*Y
+
+↑ glog
+
+* 1a8f916 (HEAD -> master) spanish
+
+| * 3982333 (topic) english
+
+|/  
+
+* 546e7d2 deutsch
+
+ 
+
+1338 agross@FIRIEL /scratch/conflict @master|MERGING*Y
+
+± git status
+
+On branch master
+
+You have unmerged paths.
+
+  (fix conflicts and run "git commit")
+
+ 
+
+Unmerged paths:
+
+  (use "git add <file>..." to mark resolution)
+
+ 
+
+	both modified:   greeting
+
+ 
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+ 
+
+1339 agross@FIRIEL /scratch/conflict @master|MERGING*Y
+
+± cat greeting 
+
+<<<<<<< HEAD
+
+hola mundo
+
+=======
+
+hello world
+
+>>>>>>> topic
+
+ 
+
+1340 agross@FIRIEL /scratch/conflict @master|MERGING*Y
+
+± git status
+
+On branch master
+
+You have unmerged paths.
+
+  (fix conflicts and run "git commit")
+
+ 
+
+Unmerged paths:
+
+  (use "git add <file>..." to mark resolution)
+
+ 
+
+	both modified:   greeting
+
+ 
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+ 
+
+1341 agross@FIRIEL /scratch/conflict @master|MERGING*Y
+
+± git add greeting
+
+ 
+
+1342 agross@FIRIEL /scratch/conflict @master|MERGING^
+
+± git status
+
+On branch master
+
+All conflicts fixed but you are still merging.
+
+  (use "git commit" to conclude merge)
+
+ 
+
+Changes to be committed:
+
+ 
+
+	modified:   greeting
+
+ 
+
+ 
+
+1343 agross@FIRIEL /scratch/conflict @master|MERGING^
+
+± type unresolve
+
+unresolve is an alias for git checkout --conflict=merge -- 
+
+ 
+
+1344 agross@FIRIEL /scratch/conflict @master|MERGING^
+
+± unresolve greeting
+
+ 
+
+1345 agross@FIRIEL /scratch/conflict @master|MERGING*Y
+
+± git status
+
+On branch master
+
+You have unmerged paths.
+
+  (fix conflicts and run "git commit")
+
+ 
+
+Unmerged paths:
+
+  (use "git add <file>..." to mark resolution)
+
+ 
+
+	both modified:   greeting
+
+ 
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+ 
+
+1346 agross@FIRIEL /scratch/conflict @master|MERGING*Y
+
+± cat greeting 
+
+<<<<<<< ours
+
+hola mundo
+
+=======
+
+hello world
+
+>>>>>>> theirs
+
+ 
+
+1347 agross@FIRIEL /scratch/conflict @master|MERGING*Y
+
+± git checkout --ours la mundo Da mundo Dgreeting
+
+ 
+
+1348 agross@FIRIEL /scratch/conflict @master|MERGINGY
+
+± cat greeting 
+
+hola mundo
+
+ 
+
+1349 agross@FIRIEL /scratch/conflict @master|MERGINGY
+
+± cat greetingDgiCcheckout --ourC C C C Dt greetingDh greetingDe greetingDr greetingC C De greetingDr greetingDi greetingDs greetingC C C Di greetingDr greetingDs greetingD
+
+ 
+
+1350 agross@FIRIEL /scratch/conflict @master|MERGING*Y
+
+± cat greeting 
+
+hello world
+
+ 
+
+1351 agross@FIRIEL /scratch/conflict @master|MERGING*Y
+
+± git status
+
+On branch master
+
+You have unmerged paths.
+
+  (fix conflicts and run "git commit")
+
+ 
+
+Unmerged paths:
+
+  (use "git add <file>..." to mark resolution)
+
+ 
+
+	both modified:   greeting
+
+ 
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+ 
+
+1352 agross@FIRIEL /scratch/conflict @master|MERGING*Y
+
+± git mergetool
+
+Merging:
+
+greeting
+
+ 
+
+Normal merge conflict for 'greeting':
+
+  {local}: modified file
+
+  {remote}: modified file
+
+ 
+
+1353 agross@FIRIEL /scratch/conflict @master|MERGING?^
+
+± git status
+
+On branch master
+
+All conflicts fixed but you are still merging.
+
+  (use "git commit" to conclude merge)
+
+ 
+
+Changes to be committed:
+
+ 
+
+	modified:   greeting
+
+ 
+
+Untracked files:
+
+  (use "git add <file>..." to include in what will be committed)
+
+ 
+
+	greeting.orig
+
+ 
+
+ 
+
+1354 agross@FIRIEL /scratch/conflict @master|MERGING?^
+
+± cat greeting
+
+Completing files
+
+greeting       greeting.origCcat greeting.orig
+
+hello world
+
+ 
+
+1355 agross@FIRIEL /scratch/conflict @master|MERGING?^
+
+± git clean -f
+
+Removing greeting.orig
+
+ 
+
+1356 agross@FIRIEL /scratch/conflict @master|MERGING^
+
+± git status
+
+On branch master
+
+All conflicts fixed but you are still merging.
+
+  (use "git commit" to conclude merge)
+
+ 
+
+Changes to be committed:
+
+ 
+
+	modified:   greeting
+
+ 
+
+ 
+
+1357 agross@FIRIEL /scratch/conflict @master|MERGING^
+
+± git commit
+
+[master 6e3f329] Merge branch 'topic'
+
+ 
+
+1358 agross@FIRIEL /scratch/conflict @master
+
+± glog
+
+*   6e3f329 (HEAD -> master) Merge branch 'topic'
+
+|\  
+
+| * 3982333 (topic) english
+
+* | 1a8f916 spanish
+
+|/  
+
+* 546e7d2 deutsch
+
+ 
+
+1359 agross@FIRIEL /scratch/conflict @master
+
+± 
+
+

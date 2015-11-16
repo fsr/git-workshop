@@ -1,0 +1,819 @@
+screen-FIRIEL-10506
+
+ 
+
+1183 agross@FIRIEL /scratch
+
+$ 
+
+bck-i-search: _Dssh agross@home.therightstuff.deB                                BD_ Dssh agross@home.therightstuff.deBDd_CDgit update-index --assume-unchanged default.yamlBDadaemon --verbose --base-path=/gw/grossweber/ --export-all &BD                                                               BCmkcd client-1B
+
+1184 agross@FIRIEL /scratch/client-1
+
+$ git init
+
+Initialized empty Git repository in /scratch/client-1/.git/
+
+ 
+
+1185 agross@FIRIEL /scratch/client-1 @master
+
+± git some 3
+
+[master (root-commit) ea9e54d] commit message for file-69.txt
+
+ 1 file changed, 1 insertion(+)
+
+ create mode 100644 file-69.txt
+
+ 
+
+[master 5856ec2] commit message for file-45.txt
+
+ 1 file changed, 1 insertion(+)
+
+ create mode 100644 file-45.txt
+
+ 
+
+[master 71c9b4d] commit message for file-82.txt
+
+ 1 file changed, 1 insertion(+)
+
+ create mode 100644 file-82.txt
+
+ 
+
+ 
+
+1186 agross@FIRIEL /scratch/client-1 @master
+
+± J
+
+1186 agross@FIRIEL /scratch/client-1 @master
+
+± glog
+
+* 71c9b4d (HEAD -> master) commit message for file-82.txt
+
+* 5856ec2 commit message for file-45.txt
+
+* ea9e54d commit message for file-69.txt
+
+ 
+
+1187 agross@FIRIEL /scratch/client-1 @master
+
+± git remote
+
+ 
+
+1188 agross@FIRIEL /scratch/client-1 @master
+
+± git remote add origin /scratch/server.git
+
+ 
+
+1189 agross@FIRIEL /scratch/client-1 @master
+
+± git remote add origin /scratch/server.gitD                              D
+
+origin
+
+ 
+
+1190 agross@FIRIEL /scratch/client-1 @master
+
+± git remote -v
+
+origin	/scratch/server.git (fetch)
+
+origin	/scratch/server.git (push)
+
+ 
+
+1191 agross@FIRIEL /scratch/client-1 @master
+
+± cat .git/config
+
+[core]
+
+	repositoryformatversion = 0
+
+	filemode = false
+
+	bare = false
+
+	logallrefupdates = true
+
+	ignorecase = true
+
+[remote "origin"]
+
+	url = /scratch/server.git
+
+	fetch = +refs/heads/*:refs/remotes/origin/*
+
+ 
+
+1192 agross@FIRIEL /scratch/client-1 @master
+
+± cd ..
+
+ 
+
+1193 agross@FIRIEL /scratch
+
+$ 
+
+ 
+
+1193 agross@FIRIEL /scratch
+
+$ mkcd server.git
+
+ 
+
+1194 agross@FIRIEL /scratch/server.git
+
+$ git init --bare
+
+Initialized empty Git repository in /scratch/server.git/
+
+ 
+
+1195 agross@FIRIEL /scratch/server.git BARE! @master
+
+± cd ../client-1
+
+ 
+
+1196 agross@FIRIEL /scratch/client-1 @master
+
+± git remote
+
+origin
+
+ 
+
+1197 agross@FIRIEL /scratch/client-1 @master
+
+± git push origin master
+
+Counting objects: 9, done.
+
+Delta compression using up to 4 threads.
+
+Compressing objects:  20% (1/5)   Compressing objects:  40% (2/5)   Compressing objects:  60% (3/5)   Compressing objects:  80% (4/5)   Compressing objects: 100% (5/5)   Compressing objects: 100% (5/5), done.
+
+Writing objects:  11% (1/9)   Writing objects:  22% (2/9)   Writing objects:  33% (3/9)   Writing objects:  44% (4/9)   Writing objects:  55% (5/9)   Writing objects:  66% (6/9)   Writing objects:  77% (7/9)   Writing objects:  88% (8/9)   Writing objects: 100% (9/9)   Writing objects: 100% (9/9), 690 bytes | 0 bytes/s, done.
+
+Total 9 (delta 2), reused 0 (delta 0)
+
+To /scratch/server.git
+
+ * [new branch]      master -> master
+
+ 
+
+1198 agross@FIRIEL /scratch/client-1 @master
+
+± glog
+
+* 71c9b4d (HEAD -> master, origin/master) commit message for file-82.txt
+
+* 5856ec2 commit message for file-45.txt
+
+* ea9e54d commit message for file-69.txt
+
+ 
+
+1199 agross@FIRIEL /scratch/client-1 @master
+
+± cd ../server.git
+
+ 
+
+1200 agross@FIRIEL /scratch/server.git BARE! @master
+
+± cd ../server.gitDglog            D
+
+* 71c9b4d (HEAD -> master) commit message for file-82.txt
+
+* 5856ec2 commit message for file-45.txt
+
+* ea9e54d commit message for file-69.txt
+
+ 
+
+1201 agross@FIRIEL /scratch/server.git BARE! @master
+
+± cd -
+
+/scratch/client-1
+
+ 
+
+1202 agross@FIRIEL /scratch/client-1 @master
+
+± git some 2
+
+[master d7cebdf] commit message for file-27.txt
+
+ 1 file changed, 1 insertion(+)
+
+ create mode 100644 file-27.txt
+
+ 
+
+[master 520ae67] commit message for file-29.txt
+
+ 1 file changed, 1 insertion(+)
+
+ create mode 100644 file-29.txt
+
+ 
+
+g
+
+1203 agross@FIRIEL /scratch/client-1 @master
+
+± glog
+
+* 520ae67 (HEAD -> master) commit message for file-29.txt
+
+* d7cebdf commit message for file-27.txt
+
+* 71c9b4d (origin/master) commit message for file-82.txt
+
+* 5856ec2 commit message for file-45.txt
+
+* ea9e54d commit message for file-69.txt
+
+ 
+
+1204 agross@FIRIEL /scratch/client-1 @master
+
+± git push origin master
+
+Counting objects: 6, done.
+
+Delta compression using up to 4 threads.
+
+Compressing objects:  25% (1/4)   Compressing objects:  50% (2/4)   Compressing objects:  75% (3/4)   Compressing objects: 100% (4/4)   Compressing objects: 100% (4/4), done.
+
+Writing objects:  16% (1/6)   Writing objects:  33% (2/6)   Writing objects:  50% (3/6)   Writing objects:  66% (4/6)   Writing objects:  83% (5/6)   Writing objects: 100% (6/6)   Writing objects: 100% (6/6), 602 bytes | 0 bytes/s, done.
+
+Total 6 (delta 1), reused 0 (delta 0)
+
+To /scratch/server.git
+
+   71c9b4d..520ae67  master -> master
+
+ 
+
+1205 agross@FIRIEL /scratch/client-1 @master
+
+± glog
+
+* 520ae67 (HEAD -> master, origin/master) commit message for file-29.txt
+
+* d7cebdf commit message for file-27.txt
+
+* 71c9b4d commit message for file-82.txt
+
+* 5856ec2 commit message for file-45.txt
+
+* ea9e54d commit message for file-69.txt
+
+ 
+
+1206 agross@FIRIEL /scratch/client-1 @master
+
+± git branch
+
+* master
+
+ 
+
+1207 agross@FIRIEL /scratch/client-1 @master
+
+± git branch -r
+
+  origin/master
+
+ 
+
+1208 agross@FIRIEL /scratch/client-1 @master
+
+± git branch -a
+
+* master
+
+  remotes/origin/master
+
+ 
+
+1209 agross@FIRIEL /scratch/client-1 @master
+
+± git branch topic
+
+ 
+
+1210 agross@FIRIEL /scratch/client-1 @master
+
+± git checkout topic
+
+Switched to branch 'topic'
+
+g
+
+1211 agross@FIRIEL /scratch/client-1 @topic
+
+± git some 3
+
+[topic 0289be8] commit message for file-68.txt
+
+ 1 file changed, 1 insertion(+)
+
+ create mode 100644 file-68.txt
+
+ 
+
+[topic 88b1041] commit message for file-42.txt
+
+ 1 file changed, 1 insertion(+)
+
+ create mode 100644 file-42.txt
+
+ 
+
+[topic 8106958] commit message for file-96.txt
+
+ 1 file changed, 1 insertion(+)
+
+ create mode 100644 file-96.txt
+
+ 
+
+ 
+
+1212 agross@FIRIEL /scratch/client-1 @topic
+
+± git push origin topic
+
+Counting objects: 9, done.
+
+Delta compression using up to 4 threads.
+
+Compressing objects:  16% (1/6)   Compressing objects:  33% (2/6)   Compressing objects:  50% (3/6)   Compressing objects:  66% (4/6)   Compressing objects:  83% (5/6)   Compressing objects: 100% (6/6)   Compressing objects: 100% (6/6), done.
+
+Writing objects:  11% (1/9)   Writing objects:  22% (2/9)   Writing objects:  33% (3/9)   Writing objects:  44% (4/9)   Writing objects:  55% (5/9)   Writing objects:  66% (6/9)   Writing objects:  77% (7/9)   Writing objects:  88% (8/9)   Writing objects: 100% (9/9)   Writing objects: 100% (9/9), 787 bytes | 0 bytes/s, done.
+
+Total 9 (delta 3), reused 0 (delta 0)
+
+To /scratch/server.git
+
+ * [new branch]      topic -> topic
+
+ 
+
+1213 agross@FIRIEL /scratch/client-1 @topic
+
+± 
+
+1213 agross@FIRIEL /scratch/client-1 @topic
+
+± J
+
+1213 agross@FIRIEL /scratch/client-1 @topic
+
+± glog
+
+* 8106958 (HEAD -> topic, origin/topic) commit message for file-96.txt
+
+* 88b1041 commit message for file-42.txt
+
+* 0289be8 commit message for file-68.txt
+
+* 520ae67 (origin/master, master) commit message for file-29.txt
+
+* d7cebdf commit message for file-27.txt
+
+* 71c9b4d commit message for file-82.txt
+
+* 5856ec2 commit message for file-45.txt
+
+* ea9e54d commit message for file-69.txt
+
+ 
+
+1216 agross@FIRIEL /scratch/client-1 @topic
+
+± git branch -a
+
+  master
+
+* topic
+
+  remotes/origin/master
+
+  remotes/origin/topic
+
+ 
+
+1217 agross@FIRIEL /scratch/client-1 @topic
+
+± git checkout master
+
+Switched to branch 'master'
+
+ 
+
+1218 agross@FIRIEL /scratch/client-1 @master
+
+± J
+
+1218 agross@FIRIEL /scratch/client-1 @master
+
+± ld master
+
+520ae67 (HEAD -> master, origin/master) commit message for file-29.txt
+
+d7cebdf commit message for file-27.txt
+
+71c9b4d commit message for file-82.txt
+
+5856ec2 commit message for file-45.txt
+
+ea9e54d commit message for file-69.txt
+
+ 
+
+1219 agross@FIRIEL /scratch/client-1 @master
+
+± git some 2
+
+[master fe6ad60] commit message for file-17.txt
+
+ 1 file changed, 1 insertion(+)
+
+ create mode 100644 file-17.txt
+
+ 
+
+[master 5c52fa4] commit message for file-18.txt
+
+ 1 file changed, 1 insertion(+)
+
+ create mode 100644 file-18.txt
+
+ 
+
+ 
+
+1220 agross@FIRIEL /scratch/client-1 @master
+
+± ld master
+
+5c52fa4 (HEAD -> master) commit message for file-18.txt
+
+fe6ad60 commit message for file-17.txt
+
+520ae67 (origin/master) commit message for file-29.txt
+
+d7cebdf commit message for file-27.txt
+
+71c9b4d commit message for file-82.txt
+
+5856ec2 commit message for file-45.txt
+
+ea9e54d commit message for file-69.txt
+
+ 
+
+1221 agross@FIRIEL /scratch/client-1 @master
+
+± git push origin master
+
+Counting objects: 6, done.
+
+Delta compression using up to 4 threads.
+
+Compressing objects:  25% (1/4)   Compressing objects:  50% (2/4)   Compressing objects:  75% (3/4)   Compressing objects: 100% (4/4)   Compressing objects: 100% (4/4), done.
+
+Writing objects:  16% (1/6)   Writing objects:  33% (2/6)   Writing objects:  50% (3/6)   Writing objects:  66% (4/6)   Writing objects:  83% (5/6)   Writing objects: 100% (6/6)   Writing objects: 100% (6/6), 547 bytes | 0 bytes/s, done.
+
+Total 6 (delta 2), reused 0 (delta 0)
+
+To /scratch/server.git
+
+   520ae67..5c52fa4  master -> master
+
+ 
+
+1222 agross@FIRIEL /scratch/client-1 @master
+
+±  ld --graph master
+
+* 5c52fa4 (HEAD -> master, origin/master) commit message for file-18.txt
+
+* fe6ad60 commit message for file-17.txt
+
+* 520ae67 commit message for file-29.txt
+
+* d7cebdf commit message for file-27.txt
+
+* 71c9b4d commit message for file-82.txt
+
+* 5856ec2 commit message for file-45.txt
+
+* ea9e54d commit message for file-69.txt
+
+ 
+
+1227 agross@FIRIEL /scratch/client-1 @master
+
+± git some 2
+
+[master 94c634f] commit message for file-16.txt
+
+ 1 file changed, 1 insertion(+)
+
+ create mode 100644 file-16.txt
+
+ 
+
+[master e80484a] commit message for file-44.txt
+
+ 1 file changed, 1 insertion(+)
+
+ create mode 100644 file-44.txt
+
+ 
+
+ 
+
+1228 agross@FIRIEL /scratch/client-1 @master
+
+± 
+
+bck-i-search: _Dld --grapDgit commit -m "adding endpoint"BDo_CpoBfailing bck-i-search: pou_CpoBPC_         CDld --graph master           Dgit push origin masterBDu_DCusBCs_DCshBCh_DpushBCBCounting objects: 6, done.
+
+Delta compression using up to 4 threads.
+
+Compressing objects:  25% (1/4)   Compressing objects:  50% (2/4)   Compressing objects:  75% (3/4)   Compressing objects: 100% (4/4)   Compressing objects: 100% (4/4), done.
+
+Writing objects:  16% (1/6)   Writing objects:  33% (2/6)   Writing objects:  50% (3/6)   Writing objects:  66% (4/6)   Writing objects:  83% (5/6)   Writing objects: 100% (6/6)   Writing objects: 100% (6/6), 548 bytes | 0 bytes/s, done.
+
+Total 6 (delta 2), reused 0 (delta 0)
+
+To /scratch/server.git
+
+   5c52fa4..e80484a  master -> master
+
+ 
+
+1229 agross@FIRIEL /scratch/client-1 @master
+
+± git push origin masterDsome 2            DDld --graph master
+
+* e80484a (HEAD -> master, origin/master) commit message for file-44.txt
+
+* 94c634f commit message for file-16.txt
+
+* 5c52fa4 commit message for file-18.txt
+
+* fe6ad60 commit message for file-17.txt
+
+* 520ae67 commit message for file-29.txt
+
+* d7cebdf commit message for file-27.txt
+
+* 71c9b4d commit message for file-82.txt
+
+* 5856ec2 commit message for file-45.txt
+
+* ea9e54d commit message for file-69.txt
+
+ 
+
+1232 agross@FIRIEL /scratch/client-1 @master
+
+± 
+
+bck-i-search: _Dld --grapDgit push origin masterBDu_DCusBCs_DCshBCh_DpushBCBTo /scratch/server.git
+
+ ! [rejected]        master -> master (fetch first)
+
+error: failed to push some refs to '/scratch/server.git'
+
+hint: Updates were rejected because the remote contains work that you do
+
+hint: not have locally. This is usually caused by another repository pushing
+
+hint: to the same ref. You may want to first integrate the remote changes
+
+hint: (e.g., 'git pull ...') before pushing again.
+
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+ 
+
+1239 agross@FIRIEL /scratch/client-1 @master
+
+↑ 
+
+1239 agross@FIRIEL /scratch/client-1 @master
+
+↑ git merge origin/master
+
+Already up-to-date.
+
+ 
+
+1240 agross@FIRIEL /scratch/client-1 @master
+
+± git fetch
+
+remote: Counting objects: 6, done.
+
+remote: Compressing objects:  25% (1/4)   remote: Compressing objects:  50% (2/4)   remote: Compressing objects:  75% (3/4)   remote: Compressing objects: 100% (4/4)   remote: Compressing objects: 100% (4/4), done.
+
+remote: Total 6 (delta 2), reused 0 (delta 0)
+
+Unpacking objects:  16% (1/6)   Unpacking objects:  33% (2/6)   Unpacking objects:  50% (3/6)   Unpacking objects:  66% (4/6)   Unpacking objects:  83% (5/6)   Unpacking objects: 100% (6/6)   Unpacking objects: 100% (6/6), done.
+
+From /scratch/server
+
+ + e80484a...e37bb5f master     -> origin/master  (forced update)
+
+ 
+
+1241 agross@FIRIEL /scratch/client-1 @master
+
+± git merge origin/master
+
+Merge made by the 'recursive' strategy.
+
+ file-06.txt | 1 +
+
+ file-53.txt | 1 +
+
+ 2 files changed, 2 insertions(+)
+
+ create mode 100644 file-06.txt
+
+ create mode 100644 file-53.txt
+
+ 
+
+1242 agross@FIRIEL /scratch/client-1 @master
+
+± glog master
+
+*   63f0c46 (HEAD -> master) Merge remote-tracking branch 'origin/master'
+
+|\  
+
+| * e37bb5f (origin/master) commit message for file-53.txt
+
+| * 8e721aa commit message for file-06.txt
+
+* | e80484a commit message for file-44.txt
+
+* | 94c634f commit message for file-16.txt
+
+|/  
+
+* 5c52fa4 commit message for file-18.txt
+
+* fe6ad60 commit message for file-17.txt
+
+| * 8106958 (origin/topic, topic) commit message for file-96.txt
+
+| * 88b1041 commit message for file-42.txt
+
+| * 0289be8 commit message for file-68.txt
+
+|/  
+
+* 520ae67 commit message for file-29.txt
+
+* d7cebdf commit message for file-27.txt
+
+* 71c9b4d commit message for file-82.txt
+
+* 5856ec2 commit message for file-45.txt
+
+* ea9e54d commit message for file-69.txt
+
+ 
+
+1243 agross@FIRIEL /scratch/client-1 @master
+
+± git push origin master
+
+Counting objects: 8, done.
+
+Delta compression using up to 4 threads.
+
+Compressing objects:  16% (1/6)   Compressing objects:  33% (2/6)   Compressing objects:  50% (3/6)   Compressing objects:  66% (4/6)   Compressing objects:  83% (5/6)   Compressing objects: 100% (6/6)   Compressing objects: 100% (6/6), done.
+
+Writing objects:  12% (1/8)   Writing objects:  25% (2/8)   Writing objects:  37% (3/8)   Writing objects:  50% (4/8)   Writing objects:  62% (5/8)   Writing objects:  75% (6/8)   Writing objects:  87% (7/8)   Writing objects: 100% (8/8)   Writing objects: 100% (8/8), 781 bytes | 0 bytes/s, done.
+
+Total 8 (delta 3), reused 0 (delta 0)
+
+To /scratch/server.git
+
+   e37bb5f..63f0c46  master -> master
+
+ 
+
+1244 agross@FIRIEL /scratch/client-1 @master
+
+± 
+
+1244 agross@FIRIEL /scratch/client-1 @master
+
+± 
+
+1244 agross@FIRIEL /scratch/client-1 @master
+
+± 
+
+1244 agross@FIRIEL /scratch/client-1 @master
+
+± git fetch
+
+ 
+
+1259 agross@FIRIEL /scratch/client-1 @master
+
+± git branch -aDfetch origin
+
+ 
+
+1260 agross@FIRIEL /scratch/client-1 @master
+
+± git branch -a
+
+* master
+
+  topic
+
+  remotes/origin/master
+
+  remotes/origin/topic
+
+ 
+
+1261 agross@FIRIEL /scratch/client-1 @master
+
+± git remote prune origin
+
+Pruning origin
+
+URL: /scratch/server.git
+
+ * [pruned] origin/topic
+
+ 
+
+1265 agross@FIRIEL /scratch/client-1 @master
+
+± git branch -a
+
+* master
+
+  topic
+
+  remotes/origin/master
+
+ 
+
+1266 agross@FIRIEL /scratch/client-1 @master
+
+± 
+
+1266 agross@FIRIEL /scratch/client-1 @master
+
+± 
+
+bck-i-search: _Dcd -BCd_git update-index --assume-unchanged default.yamlBDadaemon --verbose --base-path=/gw/grossweber/ --export-all &       
+
+bck-i-search: dae_DdaeBCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCport-all & CCort-all & CCrt-all & CCt-all & CC-all & CsCall & CCCll & CCl & CC & CC& CCBCC Dsr/ --export-all &Dcr/ --export-all & CCr/ --export-all &Car/ --export-all &Ctr/ --export-aBl &Ccr/ --export-all &Chr/ --export-all &CCall & CB[1] 9932
+
+[13612] Ready to rumble
+
+ 
+
+1267 agross@FIRIEL /scratch/client-1 @master
+
+± [14912] Connection from [::1]:56288
+
+[14912] Extended attributes (16 bytes) exist <host=localhost>
+
+[14912] Request upload-pack for '/client-1/.git'
+
+[13612] [14912] Disconnected

@@ -1,0 +1,9 @@
+https://github.com/agross/dotfiles
+https://github.com/agross/git-reveal
+https://github.com/grossweber/git-some
+https://matthew-brett.github.io/pydagogue/pain_in_dots.html
+https://www.kernel.org/pub/software/scm/git/docs/gitrevisions.html
+http://www.ndpsoftware.com/git-cheatsheet.html
+https://git-scm.com/book/en/v2
+http://gitolite.com/gitolite/index.html
+http://www.git-annex.org/
